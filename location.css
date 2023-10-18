@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.container{
+    width: 98vw;
+    height: 80vh;
+    background-image:url(./assets/desktop/image-map.png);
+}
+
+.container img{
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+
+
+.container a{
+    text-decoration: none;
+    width: 16%;
+    /* height: 20px; */
+    margin-left: 50px;    
+    padding: 10px 0px;
+    background-color: hsla(0, 0%, 8%, 1);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+.container a i{
+    cursor: pointer;
+    padding: 11px;
+    margin-right:20px;
+    background-color: hsla(24, 56%, 63%, 1);
+    color: #fff;
+}
+
+
+
+
+.description{
+    background-color: #000;
+    color: #fff;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.description .detailes{
+    width: 40%;
+}
+
+.detailes h2{
+    color: hsla(24, 56%, 63%, 1);
+}
+.detailes p{
+    margin-top: 10px;
+}
+
+
+.detailes .paragraphe{
+    width: 340px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: hsla(24, 56%, 63%, 1);
+    color: #000;
+    padding: 60px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h1{
+    font-size: 24px;    
+    cursor: pointer;
+
+}
+
+footer p{
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+footer ul li {
+    color: #000;
+    margin: 0 5px;
+}
+footer .social-media{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7437%) hue-rotate(198deg) brightness(87%) contrast(113%);
+}
+@media (max-width:375px) {
+        .container{
+            width: 80vh;
+        }
+    .description{
+        padding: 10px ;
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        padding: 10px;
+    }
+    footer h1, p{
+        margin-bottom: 10px;
+    }
+}
